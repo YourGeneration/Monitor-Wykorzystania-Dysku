@@ -193,6 +193,7 @@ while [ TRUE ]; do
 				#tworzenie pliku z lista usunietych plikow
 				plik=hdgurad_$(date +%F)_$(date +%H):$(date +%M).deleted
 				touch $plik
+				
 				for ((k=0;k<j;k++)); do
 					echo ${tablicaSciezek[$k]}>>$plik
 				done
